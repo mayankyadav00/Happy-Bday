@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     surpriseButton.addEventListener('click', function () {
         // Show surprise image
-        surpriseImage.src = 'surprise_image.jpg';
+        surpriseImage.src = 'surprise_image.jpg.jpeg';
         surpriseImage.style.display = 'block';
 
         // Play surprise song
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function playHiddenAudio() {
-        const audio = new Audio('happy_birthday_song.mp3');
+        const audio = new Audio('happy_birthday_song.mp3.mp3');
         audio.play().catch(error => {
             console.error('Error playing audio:', error);
         });
